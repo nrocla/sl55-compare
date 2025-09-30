@@ -1,8 +1,5 @@
 {
 	"version": 2,
-	"builds": [
-		{ "src": "next.config.ts", "use": "@vercel/next" }
-	],
 	"env": {
 		"NEXT_PUBLIC_ENABLED_PROVIDERS": "mock,craigslist"
 	}
