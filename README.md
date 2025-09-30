@@ -34,3 +34,37 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+---
+
+## SL55 Compare
+
+Aggregates Mercedes SL55 AMG listings around the Bay Area and lets you filter and compare.
+
+### Providers
+
+Enable providers via `NEXT_PUBLIC_ENABLED_PROVIDERS` (comma-separated):
+
+- `mock` (default)
+- `craigslist` via RSS (no keys)
+
+Example `.env.local`:
+
+```
+NEXT_PUBLIC_ENABLED_PROVIDERS=mock,craigslist
+```
+
+### Local Development
+
+```
+npm run dev
+```
+
+Visit `http://localhost:3000`.
+
+### Deploy (Vercel)
+
+1. Push to a Git repository
+2. Import into Vercel
+3. Add Environment Variable `NEXT_PUBLIC_ENABLED_PROVIDERS=mock,craigslist`
+4. Deploy
